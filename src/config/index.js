@@ -45,7 +45,7 @@ Object.keys(models).forEach((modelName) => {
 
 // Sync models with database
 // Sync models with database and log the progress
-const mode = "force" // "force" or "alter"
+const mode = "alter" // "force" or "alter"
 
 const syncModels = async () => {
   try {
