@@ -69,7 +69,7 @@ router.get("/csrf-token", (req, res) => {
 
     res.setHeader("X-CSRF-Token", csrfToken);
 
-    console.log("csrf devuelto",csrfToken);
+    console.log("csrf devuelto: ",csrfToken);
 
     res.status(200).json({ csrfToken });
 });
