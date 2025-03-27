@@ -49,11 +49,7 @@ module.exports = (sequelize) => {
     });
 
     // Relación con testimonios (una cita puede tener un testimonio)
-    Cita.hasOne(models.Testimonial, {
-      foreignKey: "id_cita",
-      as: "testimonio",
-      onDelete: "CASCADE",
-    });
+    
   };
 
   return Cita;
