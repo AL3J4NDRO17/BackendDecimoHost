@@ -65,11 +65,12 @@ router.get('/test', (req, res) => {
 
 
 router.get("/csrf-token", (req, res) => {
-    const csrfToken = req.csrfToken();
+    // const csrfToken = req.csrfToken();
 
-    res.setHeader("X-CSRF-Token", csrfToken);
+    // res.setHeader("X-CSRF-Token", csrfToken);
 
-    console.log("csrf devuelto: ",csrfToken);
+    // console.log("csrf devuelto: ",csrfToken);
+    const csrfToken ="1234"
 
     res.status(200).json({ csrfToken });
 });
