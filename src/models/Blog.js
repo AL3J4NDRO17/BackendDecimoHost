@@ -60,6 +60,7 @@ module.exports = (sequelize) => {
           key: "id",
         },
         allowNull: false,
+        primaryKey: true,
       },
     },
     {
