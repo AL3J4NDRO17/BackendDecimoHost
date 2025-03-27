@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(helmetConfig);
 // app.use(csrfProtection);
-app.use(limiter);
+// app.use(limiter);
 
 app.get("/test-critical", (req, res) => {
   try {
