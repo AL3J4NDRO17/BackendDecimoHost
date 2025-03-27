@@ -47,6 +47,7 @@ app.get("/test-warn", (req, res) => {
   res.status(200).send("WARN: Advertencia registrada.");
 });
 
+app.set('trust proxy', true);
 
 // Rutas
 app.use("/api", routes);
