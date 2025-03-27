@@ -20,7 +20,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 app.use(helmetConfig);
-// app.use(csrfProtection);
+/// app.use(csrfProtection);
 app.use(limiter);
 
 app.get("/test-critical", (req, res) => {
